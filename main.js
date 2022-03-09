@@ -9,6 +9,7 @@ const logger = (req,res,next) => {
     console.log(`${method} - ${url} - ${time}`);
     next();
 }
+
 app.use(logger);
 app.use(express.static('./public'));
 
